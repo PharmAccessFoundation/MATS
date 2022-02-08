@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+
+
+        <title>MATS</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Clean Recipe App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <script type="application/x-javascript">
+            document.addEventListener("backbutton", onBackKeyDown, false);
+            
+        function onBackKeyDown(e) { 
+   if(!localStorage.regid || $.trim(localStorage.regid) == ''){
+           e.preventDefault(); 
+              localStorage.login = "false";
+        localStorage.facility = "0";
+        localStorage.healthname = "";
+        localStorage.clear();
+        window.location.href = "index.html";
+         }
+}
+            </script>
+            <meta charset utf="8">
+        <!--font-awsome-css-->
+
+
+        <!-- CUSTOM STYLES-->
+        <link rel="stylesheet"   href="css/custom.css" rel="stylesheet" /> <!-- GOOGLE FONTS-->
+        <link href='css/google11.css' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+        <!--bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!--custom css-->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/percircle.css">
+        <link rel="stylesheet" href="css/carousel.css">
+
+        <style>
+            button, input, optgroup, select, textarea {
+
+    margin: 0;
+    font: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-family: inherit;
+    color: white;
+
+} 
+            label {
+                display: inline;
+            }
+
+            .regular-checkbox {
+                display: none;
+            }
+
+            .regular-checkbox + label {
+                background-color: #fafafa;
+                border: 1px solid #cacece;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+                padding: 9px;
+                border-radius: 3px;
+                display: inline-block;
+                position: relative;
+            }
+
+            .regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+            }
+
+            .regular-checkbox:checked + label {
+                background-color: #e9ecee;
+                border: 1px solid #adb8c0;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+                color: #99a1a7;
+            }
+
+            .regular-checkbox:checked + label:after {
+                content: '\2714';
+                font-size: 14px;
+                position: absolute;
+                top: 0px;
+                left: 3px;
+                color: #99a1a7;
+            }
+
+
+            .big-checkbox + label {
+                padding: 18px;
+            }
+
+            .big-checkbox:checked + label:after {
+                font-size: 28px;
+                left: 6px;
+            }
+
+            .tag {
+                font-family: Arial, sans-serif;
+                width: 200px;
+                position: relative;
+                top: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                display: block;
+                float: left;
+            }
+
+            .radio-1 {
+                width: 193px;
+            }
+
+            .button-holder {
+                float: left;
+            }
+
+            /* RADIO */
+
+            .regular-radio {
+                display: none;
+            }
+
+            .regular-radio + label {
+                -webkit-appearance: none;
+                background-color: #fafafa;
+                border: 1px solid #cacece;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+                padding: 9px;
+                border-radius: 50px;
+                display: inline-block;
+                position: relative;
+            }
+
+            .regular-radio:checked + label:after {
+                content: ' ';
+                width: 12px;
+                height: 12px;
+                border-radius: 50px;
+                position: absolute;
+                top: 3px;
+                background: #99a1a7;
+                box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+                text-shadow: 0px;
+                left: 3px;
+                font-size: 32px;
+            }
+
+            .regular-radio:checked + label {
+                background-color: #e9ecee;
+                color: #99a1a7;
+                border: 1px solid #adb8c0;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+            }
+
+            .regular-radio + label:active, .regular-radio:checked + label:active {
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+            }
+
+            .big-radio + label {
+                padding: 16px;
+            }
+
+            .big-radio:checked + label:after {
+                width: 24px;
+                height: 24px;
+                left: 4px;
+                top: 4px;
+            }
+            
+            
+            
+            
+            
+            /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmarkk {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmarkk {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmarkk:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmarkk:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+table tr td{
+    width: 50%;
+    color: white;
+    height: 40px;
+}
+input[type='radio']{
+    width: 15px !important;
+    height: 15px;
+    color: #1b9e97;
+    background: snow;
+    border-radius: 50%;
+}
+input[type='radio']
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     //background-color: ;
+     color: #1b9e97;
+     //top: 10px;
+     border: 0;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+input[type='radio']:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 3px;
+    // top: 7px;
+    font-weight: bolder;
+     content:  '\02143';
+     
+     transform: rotate(40deg);
+}
+input[type='radio']:hover
+{
+     background-color: #f7f7f7;
+}
+input[type='radio']:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 15px/1.7 'Open Sans', sans-serif;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+} 
+.selection{
+    display: none;
+}
+        </style>
+
+        <!--component-css-->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/lga.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--script-->
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/bigSlide.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu-link').bigSlide();
+            });
+        </script>
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/camm.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $("input:radio").attr("checked", false);
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+                });
+            });
+        </script>
+
+        <!--script-->
+        <!-- swipe box js -->
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+        <!-- //swipe box js -->
+
+
+        <!--script-->
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+            function sendMail(phone) {
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://mandrillapp.com/api/1.0/messages/send.json',
+                    data: {
+                        'key': 'YOUR API KEY HERE',
+                        'message': {
+                            'from_email': 'notification@matslagos.com.ng',
+                            'to': [
+                                {
+                                    'email': 'RECIPIENT@EMAIL.HERE',
+                                    'name': 'RECIPIENT NAME (OPTIONAL)',
+                                    'type': 'to'
+                                }
+                            ],
+                            'autotext': 'true',
+                            'subject': 'MATS Alert',
+                            'html': 'Hello, a presumptive has just been detected at your OPD. Find below the details:<br/>\n\
+        Name: \n\
+        Phone Number: \n\
+        Respondent: \n\
+        Growth Details: '
+                        }
+                    }
+                }).done(function (response) {
+                    console.log(response); // if you're into that sorta thing
+                });
+            }
+
+            if (localStorage.login != "true") {
+                window.location.href = "index.html";
+            }
+
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+            if (localStorage.login == "true" && filename == 'login.html') {
+                window.location.href = "index.html";
+            }
+            else if (localStorage.login == "false" && filename != 'login.html') {
+                window.location.href = "login.html";
+            }
+        </script>
+
+        <script>
+            function showBox() {
+                // Get the checkbox
+                var checkBox = document.getElementById("agree");
+                // Get the output text
+                var text = document.getElementById("formcontents");
+                // If the checkbox is checked, display the output text
+                if (checkBox.checked == true) {
+                    text.style.display = "block";
+                    document.getElementById('first').style.display = "block";
+                } else {
+                    text.style.display = "none";
+                    document.getElementById('first').style.display = "none";
+                }
+            }
+
+            function clickme() {
+                var resp = document.getElementById('respondent').value;
+                if (resp == "3" || resp == "4") {
+                    document.getElementById('lantitb2').style.display = "table-row";
+                } else {
+                    document.getElementById('lantitb').style.display = "table-row";
+                }
+                document.getElementById('status').value = 'yes';
+            }
+
+            function clickme2() {
+                document.getElementById('lantitb').style.display = "none";
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('status').value = 'no';
+            }
+        </script>
+        <script>
+            function showDivResp(elem) {
+                document.getElementById('cough').selectedIndex = 0;
+                document.getElementById('hiv').selectedIndex = 0;
+                document.getElementById('xray').selectedIndex = 0;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('state').selectedIndex = 0;
+                document.getElementById('lga').selectedIndex = 0;
+                document.getElementById('facility').selectedIndex = 0;
+                document.getElementById('lweight').style.display = "none"
+                document.getElementById('lmore').style.display = "none";
+                document.getElementById('lgrowth').style.display = "none";
+                document.getElementById('lfever').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('ldoc').style.display = "none";
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+                
+                var resp = document.getElementById('respondent').value;
+                if(resp == 4){
+                    document.getElementById('lxray').style.display = "none";
+                }else{
+                    document.getElementById('lxray').style.display = "table-row";
+                }
+            }
+        </script>
+        <script>
+            function showDivHIV(elem) {// reset value for HIV field
+                document.getElementById('cough').selectedIndex = 0;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('lweight').style.display = "none"
+                document.getElementById('lmore').style.display = "none";
+                document.getElementById('lfever').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('ldoc').style.display = "none";
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+
+
+            }
+        </script>
+        <script>
+            function showDivXray(elem) {// reset value for Xray field
+                document.getElementById('cough').selectedIndex = 0;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('lweight').style.display = "none"
+                document.getElementById('lmore').style.display = "none";
+                document.getElementById('lfever').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('ldoc').style.display = "none";
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+                
+
+            }
+        </script>
+        <script>
+            function showDivCough(elem) {
+
+                var hiv = document.getElementById('hiv').value;
+                var resp = document.getElementById('respondent').value;
+
+                if ($.trim(resp) == '0' || $.trim(hiv) == '0') {
+                    alert("Check Respondent and HIV Status Field Before Proceeding");
+                    document.getElementById('hiv').selectedIndex = 0;
+                    document.getElementById('respondent').selectedIndex = 0;
+                    return false;
+                }
+                document.getElementById('lfever').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('lweight').style.display = "none";
+                document.getElementById('growth').selectedIndex = 0;
+                document.getElementById('more').selectedIndex = 0;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('fever').checked = false;
+                document.getElementById('weightloss').checked = false;
+                document.getElementById('nofever').checked = false;
+                document.getElementById('noweightloss').checked = false;
+                document.getElementById('ldoc').style.display = "none";
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+
+                if (elem.value == 1) {// yes cough
+                    if (hiv == 1) {
+                        document.getElementById('yeas3').click(); // yes tb flag by hiv
+                        document.getElementById('lweight').style.display = "none"
+                        document.getElementById('lmore').style.display = "none";
+                        document.getElementById('lgrowth').style.display = "none";
+                        //document.getElementById('lsupost').style.display = "block";
+                    } else if (hiv == 2 || hiv == 3) {
+                        document.getElementById('lweight').style.display = "none"
+                        document.getElementById('lmore').style.display = "table-row";
+                        document.getElementById('lgrowth').style.display = "none";
+                    }
+                } else if (elem.value == 2) { // no cough
+                    document.getElementById('lmore').style.display = "none";
+                    if (resp == 4) {
+                        document.getElementById('lgrowth').style.display = "table-row";
+                        document.getElementById('lweight').style.display = "none";
+                        document.getElementById('lmore').style.display = "none";
+                    } else {
+                        document.getElementById('lweight').style.display = "table-row";
+                        document.getElementById('lfever').style.display = "table-row";
+                        document.getElementById('lgrowth').style.display = "none";
+                        document.getElementById('lmore').style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <script>
+            function showDivMore(elem) {
+                var hiv = document.getElementById('hiv').value;
+                var resp = document.getElementById('respondent').value;
+                document.getElementById('lfever').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('ldoc').style.display = "none";
+                document.getElementById('growth').selectedIndex = 0;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('fever').checked = false;
+                document.getElementById('weightloss').checked = false;
+                document.getElementById('nofever').checked = false;
+                document.getElementById('noweightloss').checked = false;
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+
+                if (elem.value == 1) {// yes more than 2 weeks
+                    if (resp == 4) {
+                        document.getElementById('lgrowth').style.display = "table-row";
+                        document.getElementById('lweight').style.display = "none";
+                    } else {
+                        document.getElementById('yeas3').click(); // yes tb flag by more than 2 weeks for adults
+                        document.getElementById('lweight').style.display = "none";
+                        document.getElementById('lgrowth').style.display = "none";
+                        //document.getElementById('lsupost').style.display = "block";
+                    }
+                } else if (elem.value == 2) { //below 2 weeks
+                    if (resp == 4) {
+                        document.getElementById('lgrowth').style.display = "table-row";
+                        document.getElementById('lweight').style.display = "none";
+                    } else {
+                        document.getElementById('lweight').style.display = "table-row";
+                        document.getElementById('lfever').style.display = "table-row";
+                        document.getElementById('lgrowth').style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <script>
+            function showDivGrowth(elem) {
+                var resp = document.getElementById('respondent').value;
+                var cough = document.getElementById('cough').value;
+                var more = document.getElementById('more').value;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('ldoc').style.display = "none";
+                document.getElementById('lfever').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+
+                if (resp == 4) {
+                    if (cough == 1) { //yes cough
+                        if (elem.value == 1) {//yes grow
+                            if (more == 2) {
+                                document.getElementById('lfever').style.display = "table-row";
+                            } else if (more == 1) {
+                                document.getElementById('lfever').style.display = "none";
+                                document.getElementById('yeas3').click(); // yes tb flag by cough and >2 weeks
+                                //document.getElementById('lsupost').style.display = "block";
+                            }
+                        } else if (elem.value == 2) {//no grow
+                            document.getElementById('lfever').style.display = "none";
+                            document.getElementById('yeas3').click(); // yes tb flag by cough and >2 weeks
+                            document.getElementById('ldoc').style.display = "table-row";
+                            // document.getElementById('lsupost').style.display = "block";
+                        }
+                    } else if (cough == 2) {//no cough
+                        if (elem.value == 1) {//yes grow
+                            document.getElementById('lfever').style.display = "table-row";
+                        } else if (elem.value == 2) {//no grow
+                            document.getElementById('lfever').style.display = "none";
+                            document.getElementById('yeas3').click(); // yes tb flag by cough and >2 weeks
+                            document.getElementById('ldoc').style.display = "table-row";
+                            //document.getElementById('lsupost').style.display = "block";
+                        }
+                    }
+                }
+                else {
+                    if (cough == 1) { //yes cough
+                        if (elem.value == 1) {//yes grow
+                            document.getElementById('ldoc').style.display = "none";
+                            document.getElementById('lfever').style.display = "none";
+                            document.getElementById('yeas3').click(); // yes tb flag by cough and >2 weeks
+                            // document.getElementById('lsupost').style.display = "block";
+                        } else if (elem.value == 2) {//no grow
+                            document.getElementById('ldoc').style.display = "table-row";
+                            document.getElementById('lfever').style.display = "none";
+                            document.getElementById('yeas3').click(); // yes tb flag by cough and >2 weeks
+                            //document.getElementById('lsupost').style.display = "block";
+                        }
+                    } else if (cough == 2) {//no cough
+                        if (elem.value == 1) {//yes grow
+                            document.getElementById('lfever').style.display = "table-row";
+                        } else if (elem.value == 2) {//no grow
+                            document.getElementById('lfever').style.display = "none";
+                            document.getElementById('yeas3').click(); // yes tb flag by cough and >2 weeks
+                            document.getElementById('ldoc').style.display = "table-row";
+                            //document.getElementById('lsupost').style.display = "block";
+                        }
+                    }
+                }
+            }
+        </script>
+        <script>
+            function showDivFever(elem) {
+                var resp = document.getElementById('respondent').value;
+                var weight = document.getElementById('weightloss').checked;
+                var noweight = document.getElementById('noweightloss').checked;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('nosweat').checked = false;
+                document.getElementById('sweat').checked = false;
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+
+                if (resp == 4) {
+                    if (elem.value == "nofever") {
+                        document.getElementById('yeas4').click(); // no tb from no fever
+                        document.getElementById('lsupost').style.display = "block";
+                    } else if (elem.value == "fever") {
+                        document.getElementById('lsweat').style.display = "table-row";
+                    }
+                }
+                else if (resp != 4) {
+                    if (weight == true) {
+                        if (elem.value == "fever") {
+                            document.getElementById('yeas3').click(); // yes tb from yes fever;
+                            //document.getElementById('lsupost').style.display = "block";
+                        } else if (elem.value == "nofever") {
+                            document.getElementById('lsweat').style.display = "table-row";
+                        }
+                    } else if (noweight == true) {
+                        if (elem.value == "fever") {
+                            document.getElementById('lsweat').style.display = "table-row";
+                        } else if (elem.value == "nofever") {
+                            document.getElementById('lsweat').style.display = "table-row";
+                            //document.getElementById('yeas4').click(); // no tb from no fever;
+                            //document.getElementById('lsupost').style.display = "block";
+                        }
+                    } else {
+                        alert('Select If Experiencing Weight Loss is True or Not');
+                    }
+                }
+            }
+        </script>
+        <script>
+            function showDivWeight(elem) {
+                document.getElementById('fever').checked = false;
+                document.getElementById('nofever').checked = false;
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('lsupost').style.display = "none";
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('lsweat').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+            }
+        </script>
+        <script>
+            function showDivSweat(elem) {
+                var weightloss = false;
+                var fever = false;
+                if(document.getElementById('weightloss').checked) {
+                       weightloss = true;
+                }else if(document.getElementById('noweightloss').checked) {
+                        weightloss = false;
+                }
+                if(document.getElementById('fever').checked) {
+                       fever = true;
+                }else if(document.getElementById('nofever').checked) {
+                        fever = false;
+                }
+                
+                //console.log(weightloss + ' . ' +  ' . ' + fever);
+                
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+                document.getElementById('ltb').style.display = "none";
+
+                if (elem.value == 'sweat') {
+                    //document.getElementById('yeas3').click(); //yes tb
+                    // document.getElementById('lsupost').style.display = "block";
+                    if(weightloss == false && fever == false){
+                        document.getElementById('ltb').style.display = "table-row";
+                    }else if(weightloss == false && fever == true){
+                        document.getElementById('yeas3').click(); //yes tb
+                    }else if(weightloss == true && fever == false){
+                        document.getElementById('yeas3').click(); //yes tb
+                    }else{  
+                        document.getElementById('yeas3').click(); //yes tb                      
+                    }
+                } else if (elem.value == 'nosweat') {
+                    if(weightloss == false && fever == false){
+                        document.getElementById('yeas4').click(); //no tb}
+                        document.getElementById('lsupost').style.display = "block";
+                    }else if(weightloss == false && fever == true){
+                        document.getElementById('ltb').style.display = "table-row";
+                    }else if(weightloss == true && fever == false){
+                        document.getElementById('ltb').style.display = "table-row";
+                    }else{
+                        document.getElementById('yeas3').click(); //yes tb 
+                    }
+                }
+            }
+        </script>
+        <script>
+            function showDivTB(elem) {
+                var weightloss = false;
+                var fever = false;
+                var sweat = false;
+                if(document.getElementById('weightloss').checked) {
+                       weightloss = true;
+                }else if(document.getElementById('noweightloss').checked) {
+                       weightloss = false;
+                }
+                if(document.getElementById('fever').checked) {
+                       fever = true;
+                }else if(document.getElementById('nofever').checked) {
+                       fever = false;
+                }
+                if(document.getElementById('sweat').checked) {
+                       sweat = true;
+                }else if(document.getElementById('nosweat').checked) {
+                       sweat = false;
+                }
+                
+                document.getElementById('antitb').selectedIndex = 0;
+                document.getElementById('lantitb').style.display = "none"
+                document.getElementById('lantitb2').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+
+                if (elem.value == 'tb') {
+                    //document.getElementById('yeas3').click(); //yes tb
+                    // document.getElementById('lsupost').style.display = "block";
+                    if(weightloss == false && fever == false && sweat == true){
+                        document.getElementById('yeas3').click(); //yes tb
+                    }else if(weightloss == false && fever == true && sweat == false){
+                        document.getElementById('yeas3').click(); //yes tb
+                    }else if(weightloss == true && fever == false && sweat == false){
+                        document.getElementById('yeas3').click(); //yes tb
+                    }else{ 
+                        document.getElementById('yeas3').click(); //yes tb 
+                    }
+                } else if (elem.value == 'notb') {
+                    if(weightloss == false && fever == false && sweat == true){
+                        document.getElementById('yeas4').click(); //no tb}
+                        document.getElementById('lsupost').style.display = "block";
+                    }else if(weightloss == false && fever == true && sweat == false){
+                        document.getElementById('yeas4').click(); //no tb}
+                        document.getElementById('lsupost').style.display = "block";
+                    }else if(weightloss == true && fever == false && sweat == false){
+                        document.getElementById('yeas4').click(); //no tb}
+                        document.getElementById('lsupost').style.display = "block";
+                    }else{ 
+                        document.getElementById('yeas4').click(); //no tb}
+                        document.getElementById('lsupost').style.display = "block";
+                    }
+                }
+            }
+        </script>
+        <script>
+            function showDivContact(elem) {
+                if (elem.value == 'nil') {
+                    document.getElementById('contact').style.display = "none";
+                    document.getElementById('lsupost').style.display = "none";
+                }
+                else {
+                    document.getElementById('contact').style.display = "block";
+                    document.getElementById('lsupost').style.display = "block";
+                }
+            }
+        </script>
+
+
+
+
+
+
+
+    </head>
+
+    <body class="body-back menu-link2" style="background-color: #194966;">
+        <div class="app-video" style="padding: 0px;">
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas" href="#small-dialog5"></a> 
+            </div>
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas2" href="#small-dialog52"></a>
+            </div>
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" onclick="clickme()" id="yeas3" href="#small-dialog53"></a>
+
+            </div>
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas4"  onclick="clickme2()" href="#small-dialog54"></a>
+
+            </div>
+            <div id="small-dialog5" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>Hello Welcome Here</div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            </div>
+            <div id="small-dialog53" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>TB presumptive For Further Evaluation</div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+
+            </div>
+            <div id="small-dialog54" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>Not A TB presumptive </div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+
+            </div>
+            <div id="small-dialog52" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>Hello Welcome Here 2</div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+                });</script>
+            <link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all">
+            <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+        </div>
+
+        <div class="masthead pdng-stn1" style="overflow: auto;position: relative;padding-bottom: 150px;">
+            <div id="menu" class="panel" role="navigation">
+                <div class="wrap-content">
+                    <div class="profile-menu text-center">
+                        <span id="myImgg"><img onclick="openCamera()" id="myImg" class="img-circle border-effect" src="images/pic31.png" alt=" "></span>
+                        <h3><span id="nnam2" ></span> </h3>
+                        <p><strong><i class=" fa-2x fa fa-hospital-o" /></i> (<span id="nhos" ></span>)</strong></p>
+                        <div class="pro-menu">
+                            <div class="logo">
+                                <li><a class=" link link--yaku" href="dash.html"><span>D</span><span>a</span><span>s</span><span>h</span><span>b</span><span>o</span><span>a</span><span>r</span><span>d</span></a></li>
+                                <li><a class=" link link--yaku" href="about2.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+                                <li><a class=" link link--yaku" href="survey.html"><span>S</span><span>c</span><span>r</span><span>e</span><span>e</span><span>n</span><span>i</span><span>n</span><span>g</span></a></li>
+                                <li><a class=" link link--yaku" href="pending.html"><span>P</span><span>e</span><span>n</span><span>d</span><span>i</span><span>n</span><span>g</span></a></li>
+                                <li><a class=" link link--yaku" href="change-password.html"><span>P</span><span>a</span><span>s</span><span>s</span><span>w</span><span>o</span><span>r</span><span>d</span></a></li>
+                                <li><a class=" link link--yaku" id="logoutt" href="#logoutt"><span>L</span><span>o</span><span>g</span><span>o</span><span>u</span><span>t</span></a></li>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-box wrap push" id="home">
+                <div id="main">
+
+                    <div class="parker" id="service">
+                        <div class="menu-notify2">
+                            <div class="profile-left">
+                                <a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+                            </div>
+                            <div class="Profile-mid">
+                                <h5 class="pro-link">Screening</h5>
+                            </div>
+                            <div class="Profile-right">
+                                <div id="dd3" class="wrapper-dropdown-3" tabindex="1"><i class="fa fa-user"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="help.html">Help</a></li>
+                                        <li><a id="logouttt" href="#logouttt">Log Out</a></li>
+                                    </ul>
+                                    <script type="text/javascript">
+                                        function DropDown(el) {
+                                            this.dd = el;
+                                            this.initEvents();
+                                        }
+                                        DropDown.prototype = {
+                                            initEvents: function () {
+                                                var obj = this;
+                                                obj.dd.on('click', function (event) {
+                                                    $(this).toggleClass('active');
+                                                    event.stopPropagation();
+                                                });
+                                            }
+                                        }
+                                        $(function () {
+
+                                            var dd = new DropDown($('#dd3'));
+                                            $(document).click(function () {
+                                                // all dropdowns
+                                                $('.wrapper-dropdown-3').removeClass('active');
+                                            });
+                                        });</script>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="services">
+                            <h3><strong>Welcome Back To MATS<span id="nnam" ></span>!</strong> </h3>
+                            <div id="page-wrapper" class="padding" style=" background-color: #194966">
+                                <div id="page-innerr"  style="background-color: #194966"> 
+                                    <form class="form-page" style="width: 98%" name="screener" id="screener" />
+                                    <input type="hidden" name="status" id="status" value="no">
+                                    <input type="hidden" name="mode" id="mode" value="notset">
+                                    <label class="containerr item-input" style="color:white; padding-top: 0px">
+                                        <table class="tablecheck" style="" >
+                                            <tr>
+                                                <td>
+                                                    <label class="container">
+                                                    <input type="radio" id="agree" name="agree" value="agree" checked="unchecked" onclick="showBox()" />
+                                                    <span class="checkmarkk" style="width: 25px;"></span>
+                                                    </label>
+                                                </td><td> My healthcare provider has given me information about TB Screening. My questions about TB and the screening process have also been answered. I agree to be screened for Tuberculosis and I may revoke this oral consent at any time </td>
+                                                
+                                            </tr>
+                                        </table>
+                                    </label>
+                                    <div id="formcontents" style="display: none">
+                                        <div id="first" style="display: none;;">
+                                            <table class="item-input" >
+                                                <tr id="lrespondent">
+                                                    <td class="">Respondent</td>
+                                                    <td>
+                                                <select name ="respondent" id="respondent" onchange="showDivResp(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                    <option value="0" >Choose Option</option>
+                                                    <option value="1" >Self</option>
+                                                    <option value="2" >Adult Dependent</option>
+                                                    <option value="3" >Child (5 - 14 Years)</option>
+                                                    <option value="4" >Child (Below 5 Years)</option>
+                                                </select>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr id="lxray">
+                                                <td class="">X-Ray Status</td>
+                                                <td>
+                                                <select name="xray" id="xray" onchange="showDivXray(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                    <option value="0" >Choose Option</option>
+                                                    <option value="1" >Positive</option>
+                                                    <option value="2" >Negative</option>
+                                                    <option value="3" >Unknown</option>
+                                                </select>
+                                                    
+                                                </td>
+                                                </tr>
+                                                <tr id="lhiv">
+                                                <td class="">HIV Status</td>
+                                                <td>
+                                                <select name="hiv" id="hiv" onchange="showDivHIV(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                    <option value="0" >Choose Option</option>
+                                                    <option value="1" >Positive</option>
+                                                    <option value="2" >Negative</option>
+                                                    <option value="3" >Unknown</option>
+                                                </select>
+                                                    
+                                                </td>
+                                                </tr>
+                                            <tr id="lcough" class="">
+                                                <td class="">Have Cough?</td>
+                                                <td>
+                                                <select name="cough" id="cough" onchange="showDivCough(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                    <option value="0" >Choose Option</option>
+                                                    <option value="1" >Yes</option>
+                                                    <option value="2" >No</option>
+                                                </select>
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr id="lmore" class="" style="display: none" >
+                                            <td style="color: white" >Cough More Than 2 Weeks?? </td>
+                                            <td>
+                                            <select name ="more" id="more" onchange="showDivMore(this)" class="form-control styled-select blue semi-square"  style="background-color: #1b9e97;color: white;">
+                                                <option value="0" >Choose Option</option>
+                                                <option value="1" >Yes</option>
+                                                <option value="2" >No</option>
+                                            </select>
+                                            </td> 
+                                        </tr>
+                                              
+                                        <tr class="" id="lgrowth" style="display: none" >
+                                            <td style="color: white" >Is Child Growing Adequately? </td>
+                                            <td>
+                                            <select name ="growth" id="growth" onchange="showDivGrowth(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                <option value="0" >Choose Option</option>
+                                                <option value="1" >Yes</option>
+                                                <option value="2" >No</option> 
+                                            </select>
+                                            </td>
+                                        </tr>
+                                             <tr id="lweight" style="display: none">
+                                                    <td>Experiencing Weight Loss? </td>
+                                                    <td>
+                                                        <span> No </span> <span><input type="radio" id="noweightloss" onclick="showDivWeight(this)" name="weightloss" value="noweightloss" /></span>
+                                                        <span> Yes </span> <span><input type="radio" id="weightloss" onclick="showDivWeight(this)" name="weightloss" value="weightloss" /></span>
+                                                    </td>
+                                                </tr>
+                                                 <tr id="lfever" style="display: none">
+                                                    <td>Experiencing Fever? </td>
+                                                    <td>
+                                                        <span> No </span> <span><input type="radio" id="nofever" onclick="showDivFever(this)" name="fever" value="nofever" /></span>
+                                                        <span> Yes </span> <span><input type="radio" id="fever" onclick="showDivFever(this)" name="fever" value="fever" /></span>
+                                                    </td>
+                                                </tr>
+                                                <tr  id="lsweat" style="display: none">
+                                                    <td>Experiencing Night Sweats? </td>
+                                                    <td>
+                                                        <span> No </span> <span><input type="radio" id="nosweat" onclick="showDivSweat(this)" name="sweat" value="nosweat" /></span>
+                                                        <span> Yes </span> <span><input type="radio" id="sweat" onclick="showDivSweat(this)" name="sweat" value="sweat" /></span>
+
+                                                    </td>
+                                                </tr>
+                                                <tr  id="ltb" style="display: none">
+                                                    <td>Contact Cough > 1 Month? </td>
+                                                    <td>
+                                                        <span> No </span> <span><input type="radio" id="notb" onclick="showDivTB(this)" name="tb" value="notb" /></span>
+                                                        <span> Yes </span> <span><input type="radio" id="tb" onclick="showDivTB(this)" name="tb" value="tb" /></span>
+
+                                                    </td>
+                                                </tr>
+                                                <tr  id="ldoc" style="display: none">
+                                                    <td colspan="2">
+                                                            <span style="color: white" >Enter Child's Growth Details (Optional)</span>
+                                                            <textarea id="doc" style="margin-bottom:10px" name="doc" class="" placeholder=" Child's Growth Details Can Include (MUAC, Height, Weight, ETC...)"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr  id="lantitb" style="display: none">
+                                                    <td>Used Any AntiTB Drugs For One Month or More? </td>
+                                                    <td> 
+                                                        <select name ="antitb" id="antitb" onchange="showDivContact(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                            <option value="nil" >Choose Option</option>
+                                                            <option value="yes" >Yes</option>
+                                                            <option value="no" >No</option> 
+                                                            <option value="unknown" >Unknown</option> 
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr  id="lantitb2" style="display: none">
+                                                    <td>Recent Exposure To An Adult Who Has Cough? </td>
+                                                    <td> 
+                                                        <select name ="antitb2" id="antitb2" onchange="showDivContact(this)" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                            <option value="nil" >Choose Option</option>
+                                                            <option value="yes" >Yes</option>
+                                                            <option value="no" >No</option> 
+                                                            <option value="unknown" >Unknown</option> 
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                        <div id="contact" style="display: none;padding-top: 10px;">
+                                            <fieldset style="    border: 1px solid silver">
+                                                <input  id="loc" type="hidden" name="loc" value=""/>
+                                                <legend style="color: wheat"><strong>Personal Details</strong></legend>
+                                                <label class="item-input">
+                                                    <span class="input-label">First Name</span>
+                                                    <input type="text" placeholder="" id="nameme">
+                                                </label>
+                                                <label class="item-input">
+                                                    <span class="input-label">Last Name</span>
+                                                    <input type="text" placeholder="" id="nameme2">
+                                                </label>
+                                                <label class="item-input">
+                                                    <span class="input-label">Age</span>
+                                                    <input type="text" placeholder="" id="age">
+                                                </label>
+                                                <label class="item-input" id="lgender"  >
+                                                    <span  class="input-label" style="color: white" >Gender </span>
+                                                    <select name ="gender" id="gender" onchange="" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                        <option value="nil" >Choose Option</option>
+                                                        <option value="male" >Male</option>
+                                                        <option value="female" >Female</option> 
+                                                    </select>
+                                                </label>
+                                                <label class="item-input">
+                                                    <span class="input-label">Occupation</span>
+                                                    <input type="text" placeholder="" id="occupation">
+                                                </label>
+                                                <label class="item-input" id="lmarital"  >
+                                                    <span class="input-label" style="color: white" >Marital Status </span>
+                                                    <select name ="marital" id="marital" onchange="" class="form-control styled-select blue semi-square" style="background-color: #1b9e97;color: white;">
+                                                        <option value="nil" >Choose Option</option>
+                                                        <option value="single" >Single</option>
+                                                        <option value="married" >Married</option> 
+                                                        <option value="divorced" >Divorced</option> 
+                                                    </select>
+                                                </label>
+
+                                            </fieldset>
+                                            <div style="padding-top: 10px;">
+                                                <fieldset style="    border: 1px solid silver">
+                                                    <legend style="color: wheat"><strong>Contact Details</strong></legend>
+
+                                                    <label class="item-input">
+                                                        <span class="input-label">Mobile</span>
+                                                        <input type="text" placeholder="" maxlength="11" id="phone">
+                                                    </label>
+
+                                                    <label class="item-input">
+                                                        <span class="input-label">Address</span>
+                                                        <input type="text" placeholder="" id="address">
+                                                    </label>
+
+                                                </fieldset>
+                                            </div>
+                                            <div style="padding-top: 10px;">
+                                                <fieldset style="    border: 1px solid silver">
+                                                    <legend style="color: wheat"><strong>Referral Details</strong></legend>
+                                                    <div id="lloc">
+                                                        <label class="item-input offlinee" id="lstate">
+                                                            <span class="input-label">State</span>
+                                                            <select name="state" id="state" class="form-control" style="background-color: #1b9e97;color: white;">
+                                                                
+                                <option value="" selected="selected" >- Select -</option>
+                                <option value='Abia'>Abia</option>
+                                <option value='Adamawa'>Adamawa</option>
+                                <option value='AkwaIbom'>AkwaIbom</option>
+                                <option value='Anambra'>Anambra</option>
+                                <option value='Bauchi'>Bauchi</option>
+                                <option value='Bayelsa'>Bayelsa</option>
+                                <option value='Benue'>Benue</option>
+                                <option value='Borno'>Borno</option>
+                                <option value='Cross River'>Cross River</option>
+                                <option value='Delta'>Delta</option>
+                                <option value='Ebonyi'>Ebonyi</option>
+                                <option value='Edo'>Edo</option>
+                                <option value='Ekiti'>Ekiti</option>
+                                <option value='Enugu'>Enugu</option>
+                                <option value='FCT'>FCT</option>
+                                <option value='Gombe'>Gombe</option>
+                                <option value='Imo'>Imo</option>
+                                <option value='Jigawa'>Jigawa</option>
+                                <option value='Kaduna'>Kaduna</option>
+                                <option value='Kano'>Kano</option>
+                                <option value='Katsina'>Katsina</option>
+                                <option value='Kebbi'>Kebbi</option>
+                                <option value='Kogi'>Kogi</option>
+                                <option value='Kwara'>Kwara</option>
+                                <option value='Lagos'>Lagos</option>
+                                <option value='Nasarawa'>Nasarawa</option>
+                                <option value='Niger'>Niger</option>
+                                <option value='Ogun'>Ogun</option>
+                                <option value='Ondo'>Ondo</option>
+                                <option value='Osun'>Osun</option>
+                                <option value='Oyo'>Oyo</option>
+                                <option value='Plateau'>Plateau</option>
+                                <option value='Rivers'>Rivers</option>
+                                <option value='Sokoto'>Sokoto</option>
+                                <option value='Taraba'>Taraba</option>
+                                <option value='Yobe'>Yobe</option>
+                                <option value='Zamfara'>Zamafara</option>
+                            </select>
+                                                        </label>
+
+                                                        <label class="item-input offlinee" id="llga">
+                                                            <span class="input-label">LGA</span>
+                                                            <select name="lga" id="lga" class="form-control" onchange="facs()" style="background-color: #1b9e97;color: white;">
+                                                            </select>
+                                                        </label>
+
+                                                        <label class="item-input offlinee" id="lfaccc">
+                                                            <span class="input-label"> Facility</span>
+                                                            <span id="faccc">
+                                                                <select name="facility" id="facility" class="form-control" style="background-color: #1b9e97;color: white;">
+                                                                </select>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div id="lselfrefer" style="display: none">
+                                                        <span  >
+                                                            <table class="tablecheck" style="" >
+                                                                <tr>
+                                                                    <td>Self Referral? </td>
+                                                                    <td><span> Yes </span> <span><input type="radio" id="selfrefer" name="selfrefer" value="selfrefer" /></span>
+
+                                                                    </td>
+
+                                                                </tr>
+                                                            </table>
+                                                        </span>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+
+                                        <label id="lsupost" class="item-input" style="display: none">
+                                            <span class="input-label"></span>
+                                            <button class="button button-block button-positive" id="supost">End Survey</button>
+                                        </label>
+                                    </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--<footer class="row" id="footer" >
+                <div class="container">
+                        <section class="customer-logos slider" style="background-color: #EEE">
+                            <div class="slide" style="width: 100%; padding-top: 10%"><img style="width: 100%" src="images/image11.png"></div>
+                        </section>
+                </div>
+        </footer>-->
+            </div>
+
+        </div>
+        <div class="banner-bottom" style="position: fixed; bottom: 0;  width: 100%; /*height: 50px;*/ border-top: 2px solid #008CBA;border-bottom: 2px solid #008CBA; background-color: #ccc">
+           <div class="row2">
+                <div class="column2">
+                 <img src="images/image3.png" alt="NTBLCP" style="width:100%">
+                </div>
+               <div class="column2">
+                  <!--   <img src="images/image3.png" alt="Mountains" style="width:100%">-->
+                </div>
+                <div class="column2">
+                   <img src="images/image33.png" alt="GF" style="width:100%">
+                </div>
+            </div>
+
+        </div>
+
+        <!--start-copyright
+        <div class="copy-right">
+            <p>Copyright &copy; 2017  All rights  Reserved</p>
+        </div>-->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="js/jq.js"></script>-->
+        <script type="text/javascript" src="js/auth.js"></script>
+        <!-- CUSTOM SCRIPTS -->
+        <script src="js/custom.js"></script>
+        <script>
+                                                        if (!localStorage.regid || $.trim(localStorage.regid) == '') {
+                                                            localStorage.login = "false";
+                                                            localStorage.facility = "0";
+                                                            localStorage.healthname = "";
+                                                            localStorage.clear();
+                                                            window.location.href = "index.html";
+                                                        }
+                                                        document.getElementById("nnam").innerHTML = ' ' + localStorage.healthname;
+        </script>
+        <script> document.getElementById("nnam2").innerHTML = ' ' + localStorage.healthname;</script>
+        <script> document.getElementById("nhos").innerHTML = localStorage.facilityname;</script>
+
+
+        <script>
+            var condition = navigator.onLine ? "online" : "offline"
+            document.getElementById('mode').value = condition;
+
+            if ($(window).height() > $("body").height()) {
+                $("footer").css("position", "fixed");
+            } else {
+                $("footer").css("position", "static");
+            }
+
+            if (condition == "online") {
+                $.ajax({
+                    url: "http://geoip-db.com/jsonp",
+                    jsonpCallback: "callback",
+                    dataType: "jsonp",
+                    success: function (location) {
+                        var x = document.getElementById("state");
+                        var option = document.createElement("option");
+                        option.text = location.state;
+                        x.add(option);
+                        localStorage.currentstate = location.state;
+                    }
+                });
+            } else {
+                //alert(localStorage.currentstate);
+                var x = document.getElementById("state");
+                var option = document.createElement("option");
+                option.text = localStorage.currentstate;
+                x.add(option);
+
+            }
+
+
+            function facs() {
+                var url = "http://197.159.69.199:8000/pharm/auth_new.php?callback=?";
+                var state = $("#state").val();
+                var lga = $("#lga").val();
+                var dataString = "lga=" + lga + "&state=" + state + "&lgaload=";
+                if ($.trim(state) == '') {
+                    alert("Please Select State");
+                    return false;
+                } else if ($.trim(lga) == '') {
+                    alert("Please Select LGA");
+                    return false;
+                }
+
+                if ($.trim(state).length > 0 & $.trim(lga).length > 0)
+                {
+                    var condition = navigator.onLine ? true : false;
+                    if (condition) {
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data: dataString,
+                            crossDomain: true,
+                            cache: false,
+                            beforeSend: function () {
+                                $("#faccc").html('<button class="button button-block button-positive">Loading Available Facilities...</button>');
+                            },
+                            success: function (datay) {
+                                //alert(datay);
+                                var dp = datay;
+                                //document.getElementById("faccc").innerHTML = dp;
+                                $("#faccc").html(dp);
+                            },
+                            error: function (request, status, error) {
+                                //Self refferral
+                                $("#faccc").html('<select name="programme" id="programme" class="form-control" style="background-color: #1B9E97;color: white;"><option value="" selected="selected" >- No Facility Available -</option></select>');
+                            }
+                        });
+                    } else {
+                        //Cached local Facilities
+                        $("#faccc").html('<select name="programme" id="programme" class="form-control" style="background-color: #1B9E97;color: white;"><option value="'+ localStorage.facility +'" selected="selected" >- '+ localStorage.facilityname +' -</option></select>');
+                       /* var jsonn = localStorage.jsonn;
+                        var lgas = [];
+                        var facs = [];
+                        var obj = JSON.parse(jsonn);
+
+                        for (i in obj) {
+                            if ((typeof facs[obj[i].lga] != 'undefined' && facs[obj[i].lga] instanceof Array)) {
+                                facs[obj[i].lga].push(obj[i].name);
+                                continue;
+                            } else {
+                                facs[obj[i].lga] = [];
+                                lgas.push(obj[i].lga);
+                                facs[obj[i].lga].push(obj[i].name);
+                                continue;
+                            }
+                        }
+                        //console.log(facs);
+                        // ﻿$(document).ready(function () {
+                        //  $("#state").change(function () {
+                        var select = document.getElementById("facility");
+                        var options = facs[lga];
+                        var i;
+                        for (i = select.options.length - 1; i >= 0; i--)
+                        {
+                            select.remove(i);
+                        }
+                        for (var i = 0; i < options.length; i++) {
+                            var opt = options[i];
+                            var el = document.createElement("option");
+                            el.textContent = opt;
+                            el.value = opt;
+                            select.appendChild(el);
+                        }*/
+                        // });
+                        //});
+                    }
+                }
+                return false;
+            }
+
+            window.addEventListener('load', function () {
+
+                function updateOnlineStatus() {
+                    if (!navigator.onLine) {
+                        //alert('Application Has Switched To Offline Mode');
+                        document.getElementById('state').selectedIndex = 0;
+                        document.getElementById('lga').selectedIndex = 0;
+                        document.getElementById('facility').selectedIndex = 0;
+                        //document.getElementById('lloc').style.display = "none";
+                        // document.getElementById('lselfrefer').style.display = "block";
+                        document.getElementById('mode').value = 'offline';
+                    } else {
+                        //alert('Application Has Switched To Online Mode');
+                        document.getElementById('lloc').style.display = "block";
+                        //document.getElementById('selfrefer').checked = false;
+                        //document.getElementById('lselfrefer').style.display = "none";
+                        document.getElementById('mode').value = 'online';
+                    }
+                }
+
+                window.addEventListener('online', updateOnlineStatus);
+                window.addEventListener('offline', updateOnlineStatus);
+            });
+
+            if ($.trim(localStorage.pix) != '') {
+                document.getElementById("myImgg").innerHTML = '<img onclick="openCamera()" id="myImg" class="img-circle border-effect" src="http://197.159.69.199:8000/pharm/upload/' + localStorage.pix + '" alt=" ">';
+            }
+        </script>
+        <script>
+            var onSuccess = function (position) {
+                document.getElementById("loc").value = position.coords.longitude +':'+ position.coords.latitude;
+                localStorage.longlat = position.coords.longitude +':'+ position.coords.latitude;
+            };
+
+            function onError(error) {
+                alert('code: ' + error.code + '\n' +
+                        'message: ' + error.message + '\n');
+            }
+
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        </script>
+    </body>
+
+</html>

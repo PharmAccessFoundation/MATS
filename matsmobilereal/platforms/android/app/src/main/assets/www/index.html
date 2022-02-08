@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+
+
+        <title>MATS</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Clean Recipe App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <meta charset utf="8">
+        <!--font-awsome-css-->
+        <!--bootstrap-->
+        <!--custom css-->
+
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/f7/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+        <!--component-css-->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--script-->
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/bigSlide.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu-link').bigSlide();
+            });
+        </script>
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    //$('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+                });
+                 $(".scroll").click(function () {
+                window.setTimeout(function () {
+                    location.href = "signup.html";
+                }, 300);
+                 });
+            });
+        </script>
+
+        <!--script-->
+        <!-- swipe box js -->
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+        <!-- //swipe box js -->
+
+
+        <!--script-->
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+        var url = window.location.pathname;
+        var filename = url.substring(url.lastIndexOf('/') + 1);
+        if (localStorage.login == "true" && filename == 'index.html') {
+            window.location.href = "dash.html";
+        }
+        else if (localStorage.login == "false" && filename != 'index.html') {
+            window.location.href = "index.html";
+        }
+        
+        document.addEventListener("offline", offNotifyy, false);
+        document.addEventListener("online", onSendy, false);
+    function offNotifyy() {
+        document.getElementById("small-dialog5").innerHTML = "Please Connect Internet To View";
+    }
+    function onSendy() {
+        document.getElementById("small-dialog5").innerHTML = '<iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+    }
+    </script>
+    
+    
+        
+   
+</head>
+<body class="" style="background-color: #194966;">
+
+	
+
+<div class="pages navbar-fixed toolbar-fixed">
+    <div data-page="login" class="page">
+
+        <div class="page-content">
+
+            <div class="nice-header header-fix-top small">
+                <div class="logo">
+                   <h1> <h2 class="mb-0 site-logo">
+                        <span><img src="img/logo_1.png" alt="Image" class="img-fluid" width="200px"></span>
+                       <!-- <span><font size="32">MATS</font></span>-->
+                   <!-- </h2></h1>
+                    <h2>First step to improving TB care</h2>-->
+                </div>
+                <svg class="anim-svg" viewBox="0 0 629 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                    <defs></defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Splash" sketch:type="MSArtboardGroup" transform="translate(-60.000000, -749.000000)" fill="#FFFFFF">
+                            <g id="flaga" sketch:type="MSLayerGroup">
+                                <path d="M60.7617187,750.025391 L375.435547,811.568359 L688.558594,749.867188 L60.7617187,750.025391 Z" id="Path-30" sketch:type="MSShapeGroup"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="login-view-box mt-50">
+
+                <div class="list login-form-box">
+                    <form ng-submit="tryLogin()" class="form nice-label">
+
+                        <div class="form-row">
+                            <label for="login"><span class="icon-envelope"></span></label>
+                            <input type="text" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <label for="password"><span class="icon-lock"></span></label>
+                            <input type="password" id="password" placeholder="Password">
+                <input  id="loc" type="hidden" name="loc" value=""/>
+                        </div>
+
+                        <div class="buttons-row">
+                        <a class="button button-light" href="#" style="border-radius: 7px; font-weight: bold; background-image:linear-gradient(#04acbb,#021d39a3); margin: 0 0.5% 0 0.5%;min-height: 55px; line-height: 55px;" id="login">Sign In</a>
+                            <a class="button button-light" href="forget-password.html" style="border-radius: 7px; font-weight: bold; background-image:linear-gradient(#04acbb,#021d39a3); margin: 0 0.5% 0 0.5%;min-height: 55px; line-height: 55px;"  id="forgot">Forgot Password?</a>
+                            
+                        </div>
+
+                       <!-- <div class="text-center or-social">
+                            or log in using
+                        </div>-->
+
+                       <br><br><div class="buttons-row" style="text-align: center;padding: 0 10% 0 10%;">
+                            <a class="button button-light" href="facility.html" style="font-weight: bold; border-radius: 10px 0 0 10px; background-image:linear-gradient(#f5515f, #a1051d);">New Hub</a>
+                            <a class="button button-light" href="signup.html" style="font-weight: bold; border-radius: 0 10px 10px 0;  background-image:linear-gradient(#fdd20e,#c1292e);">New Spoke</a>
+                        </div></br>
+
+
+                    </form>
+                </div>
+
+                <div class="footer-link text-center">
+                    <a href="about.html">
+                        <strong>Click Here For More Help</strong>
+                    </a>
+                </div>
+<div class="banner-bottom" style="position: fixed; bottom: 0;  width: 100%; /*height: 50px;*/ border-top: 2px solid #008CBA;border-bottom: 2px solid #008CBA; background-color: #ccc">
+            <div class="row2">
+                <div class="column2">
+                 <img src="images/image3.png" alt="NTBLCP" style="width:100%">
+                </div>
+               <div class="column2">
+                  <!--   <img src="images/image3.png" alt="Mountains" style="width:100%">-->
+                </div>
+                <div class="column2">
+                   <img src="images/image33.png" alt="GF" style="width:100%">
+                </div>
+            </div>
+
+        </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('.popup-with-zoom-anim').magnificPopup({
+                    type: 'inline',
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+                    overflowY: 'auto',
+                    closeBtnInside: true,
+                    preloader: false,
+                    midClick: true,
+                    removalDelay: 300,
+                    mainClass: 'my-mfp-zoom-in'
+                });
+
+            });
+
+        </script>								  
+        <!--pop-up-box--> 
+        <link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all">
+        <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+        
+   
+       <div class="banner-bottom" style="position: fixed; bottom: 0;  width: 100%; /*height: 50px;*/ border-top: 2px solid #008CBA;border-bottom: 2px solid #008CBA; background-color: #ccc">
+            <div class="row2">
+                <div class="column2">
+                  <!--  <img src="images/image1.png" alt="Snow" style="width:100%">-->
+                </div>
+                <div class="column2">
+                    <img src="images/image3.png" alt="Mountains" style="width:100%">
+                </div>
+                <div class="column2">
+                   <!-- <img src="images/image2.png" alt="Snow" style="width:100%">-->
+                </div>
+            </div>
+
+        </div>
+
+        <!--start-copyright
+        <div class="copy-right">
+            <p>Copyright &copy; 2017  All rights  Reserved</p>
+        </div>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="js/jq.js"></script>-->
+        <script type="text/javascript" src="js/auth.js"></script>
+        <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('.customer-logos').slick({
+                                slidesToShow: 6,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                autoplaySpeed: 1000,
+                                arrows: false,
+                                dots: false,
+                                pauseOnHover: false,
+                                responsive: [{
+                                        breakpoint: 768,
+                                        settings: {
+                                            slidesToShow: 4
+                                        }
+                                    }, {
+                                        breakpoint: 520,
+                                        settings: {
+                                            slidesToShow: 3
+                                        }
+                                    }]
+                            });
+                        });
+        </script>
+        <script>
+            if ($(window).height() > $("body").height()) {
+                $("footer").css("position", "fixed");
+            } else {
+                $("footer").css("position", "static");
+            }
+        </script>
+         <script>
+            var onSuccess = function (position) {
+                document.getElementById("loc").value = position.coords.longitude +':'+ position.coords.latitude;
+                localStorage.longlat  = position.coords.longitude +':'+ position.coords.latitude;
+            };
+
+            function onError(error) {
+                //alert('code: ' + error.code + '\n' +
+                      //  'message: ' + error.message + '\n');
+            }
+
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        </script>
+    </body>
+
+</html>

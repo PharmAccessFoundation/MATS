@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+
+
+        <title>MATS</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Clean Recipe App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <script type="application/x-javascript">
+            document.addEventListener("backbutton", onBackKeyDown, false);
+            
+        function onBackKeyDown(e) { 
+   if(!localStorage.regid || $.trim(localStorage.regid) == ''){
+           e.preventDefault(); 
+              localStorage.login = "false";
+        localStorage.facility = "0";
+        localStorage.healthname = "";
+        localStorage.clear();
+        window.location.href = "index.html";
+         }
+}
+            </script>
+        <meta charset utf="8">
+        <!--font-awsome-css-->
+        <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+        <!--bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!--custom css-->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/percircle.css">
+        <link rel="stylesheet" href="css/carousel.css">
+
+
+        <!--component-css-->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--script-->
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/bigSlide.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu-link').bigSlide();
+            });
+        </script>
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript" src="js/camm.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+                });
+            });
+        </script>
+
+        <!--script-->
+        <!-- swipe box js -->
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+        <!-- //swipe box js -->
+
+
+        <!--script-->
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+        
+         if(localStorage.login != "true"){
+                window.location.href = "index.html";
+            }
+            
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+            if (localStorage.login == "true" && filename == 'login.html') {
+                window.location.href = "index.html";
+            }
+            else if (localStorage.login == "false" && filename != 'login.html') {
+                window.location.href = "login.html";
+            }}
+        
+        document.addEventListener("offline", offNotifyy, false);
+        document.addEventListener("online", onSendy, false);
+    function offNotifyy() {
+        document.getElementById("small-dialog5").innerHTML = "Please Connect Internet To View";
+    }
+    function onSendy() {
+        document.getElementById("small-dialog5").innerHTML = '<iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+    }
+    </script>
+        <script type="text/javascript">
+           
+        </script>
+    </head>
+
+    <body class="body-back" style="background-color: #000;">
+
+
+        <div class="masthead pdng-stn1" style="overflow: auto;position: relative;padding-bottom: 150px;">
+            <div id="menu" class="panel" role="navigation">
+                <div class="wrap-content">
+                    <div class="profile-menu text-center">
+                       <span id="myImgg"><img onclick="openCamera()" id="myImg" class="img-circle border-effect" src="images/pic31.png" alt=" "></span>
+                        <h3><span id="nnam2" ></span> </h3>
+                        <p><strong><i class=" fa-2x fa fa-hospital-o" /></i> (<span id="nhos" ></span>)</strong></p>
+                        <div class="pro-menu">
+                            <div class="logo">
+                                <li><a class=" link link--yaku" href="dash.html"><span>D</span><span>a</span><span>s</span><span>h</span><span>b</span><span>o</span><span>a</span><span>r</span><span>d</span></a></li>
+                                <li><a class=" link link--yaku" href="about2.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+                                <li><a class=" link link--yaku" href="survey.html"><span>S</span><span>c</span><span>r</span><span>e</span><span>e</span><span>n</span><span>i</span><span>n</span><span>g</span></a></li>
+                                <li><a class=" link link--yaku" href="pending.html"><span>P</span><span>e</span><span>n</span><span>d</span><span>i</span><span>n</span><span>g</span></a></li>
+                                <li><a class=" link link--yaku" href="change-password.html"><span>P</span><span>a</span><span>s</span><span>s</span><span>w</span><span>o</span><span>r</span><span>d</span></a></li>
+                                <li><a class=" link link--yaku" id="logoutt" href="#logoutt"><span>L</span><span>o</span><span>g</span><span>o</span><span>u</span><span>t</span></a></li>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-box wrap push" id="home">
+                <div id="main">
+                     
+                    <div class="parker" id="service">
+				<div class="menu-notify2">
+						<div class="profile-left">
+							<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+						</div>
+						<div class="Profile-mid">
+							<h5 class="pro-link">About MATS!</h5>
+						</div>
+						<div class="Profile-right">
+							<div id="dd3" class="wrapper-dropdown-3" tabindex="1"><i class="fa fa-user"></i>
+								<ul class="dropdown">
+									<li><a href="help.html">Help</a></li>
+                                        <li><a id="logouttt" href="#logouttt">Log Out</a></li>
+								</ul>
+									<script type="text/javascript">
+																function DropDown(el) {
+																	this.dd = el;
+																	this.initEvents();
+																}
+																DropDown.prototype = {
+																	initEvents : function() {
+																		var obj = this;
+													
+																		obj.dd.on('click', function(event){
+																			$(this).toggleClass('active');
+																			event.stopPropagation();
+																		});	
+																	}
+																}
+																$(function() {
+													
+																	var dd = new DropDown( $('#dd3') );
+													
+																	$(document).click(function() {
+																		// all dropdowns
+																		$('.wrapper-dropdown-3').removeClass('active');
+																	});
+													
+																});
+									</script>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				<div class="services">
+					<h3><strong>Welcome Back To MATS<span id="nnam" ></span>!</strong> </h3>
+                                        <div style="color:white; text-align: justify; padding: 10px 10px 0px 10px;">
+                            It is estimated that over 70% of TB cases are missed annually in Nigeria due to wrong diagnosis, poor notification, inadequate access to health and inefficient linkages between healthcare centers. This gap is particularly higher in children as 87% of the estimated TB cases in this age group were missed in 2016. Within healthcare facilities, patients presenting with cough of 2 weeks or more duration are usually not proactively screened for TB hence, a wrong diagnosis is sometimes made. The existing NTP structure provides a system to document and report patients from the point of identification as a presumptive till when treatment is completed however, there is no known structured method of capturing screening done the OPD. For this reason, patients are not found actively and separated safely (FAST strategy) for diagnosis and treatment. In Q2 Y3, the BMF project being implemented by PAF and KNCV, identified this gap and designed a paper based tool to implement active screening of patients at the OPD. This activity was successful in increasing the number of presumptive patients identified across the 60 supported facilities but not without its challenges. Documentation of screened patients was thought to be cumbersome therefore data was usually not kept for more than 3 months; papers were worn out or dirty which sometimes resulted in loss of data and lastly, there were disparities between the number of presumptives written in the screening tool and presumptive registers. In a bid to solve these issues, the Mobile App for TB Screening (MATS) was developed which is an Android based application developed by the project to increase the efficiency and referral process of active in-facility screening for TB. It provides real-time information to DOT providers, project staff and implementing partners through a backend web application when presumptives are identified at the OPD.
+                        </div>
+						
+				</div>
+
+			</div>
+                    
+                </div>
+
+                <!--<footer class="row" id="footer" >
+                <div class="container">
+                        <section class="customer-logos slider" style="background-color: #EEE">
+                            <div class="slide" style="width: 100%; padding-top: 10%"><img style="width: 100%" src="images/image11.png"></div>
+                        </section>
+                </div>
+        </footer>-->
+            </div>
+           
+        </div>
+        <div class="banner-bottom" style=" bottom: 0;  width: 100%; /*height: 50px;*/ border-top: 2px solid #008CBA;border-bottom: 2px solid #008CBA; background-color: #ccc">
+           <div class="row2">
+                <div class="column2">
+                 <img src="images/image3.png" alt="NTBLCP" style="width:100%">
+                </div>
+               <div class="column2">
+                  <!--   <img src="images/image3.png" alt="Mountains" style="width:100%">-->
+                </div>
+                <div class="column2">
+                   <img src="images/image33.png" alt="GF" style="width:100%">
+                </div>
+            </div>
+
+        </div>
+
+        <!--start-copyright
+        <div class="copy-right">
+            <p>Copyright &copy; 2017  All rights  Reserved</p>
+        </div>-->
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="js/jq.js"></script>-->
+        <script type="text/javascript" src="js/auth.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="js/custom.js"></script><script>
+                                                        if (!localStorage.regid || $.trim(localStorage.regid) == '') {
+                                                            localStorage.login = "false";
+                                                            localStorage.facility = "0";
+                                                            localStorage.healthname = "";
+                                                            localStorage.clear();
+                                                            window.location.href = "index.html";
+                                                        }
+                                                        document.getElementById("nnam").innerHTML = ' ' + localStorage.healthname;
+        </script>
+    <script> document.getElementById("nnam2").innerHTML =  ' ' + localStorage.healthname; </script>
+    <script> document.getElementById("nhos").innerHTML =  localStorage.facilityname; </script>
+        
+        <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('.customer-logos').slick({
+                                slidesToShow: 6,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                autoplaySpeed: 1000,
+                                arrows: false,
+                                dots: false,
+                                pauseOnHover: false,
+                                responsive: [{
+                                        breakpoint: 768,
+                                        settings: {
+                                            slidesToShow: 4
+                                        }
+                                    }, {
+                                        breakpoint: 520,
+                                        settings: {
+                                            slidesToShow: 3
+                                        }
+                                    }]
+                            });
+                        });
+        </script>
+        <script>
+            if ($(window).height() > $("body").height()) {
+                $("footer").css("position", "fixed");
+            } else {
+                $("footer").css("position", "static");
+            }
+            
+            if($.trim(localStorage.pix) != ''){
+                document.getElementById("myImgg").innerHTML = '<img onclick="openCamera()" id="myImg" class="img-circle border-effect" src="http://192.3.137.194/~matslagos/pharm/upload/'+ localStorage.pix +'" alt=" ">';
+               }
+        </script>
+    </body>
+
+</html>

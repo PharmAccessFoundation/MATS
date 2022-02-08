@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+        <link  rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet"  href="css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+        <link rel="stylesheet"   href="css/custom.css" rel="stylesheet" /> <!-- GOOGLE FONTS-->
+        <link href='css/google11.css' rel='stylesheet' type='text/css' />
+
+
+        <!-- BOOTSTRAP SCRIPTS -->
+        <script src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script><!--webfonts-->
+        <link href='css/google22.css' rel='stylesheet' type='text/css'>
+        <!--//webfonts-->
+
+        <title>MATS</title>
+        <script type="text/javascript">
+            function sendMail(phone) {
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+                    data: {
+                        'key': 'YOUR API KEY HERE',
+                        'message': {
+                            'from_email': 'notification@matslagos.com.ng',
+                            'to': [
+                                {
+                                    'email': 'RECIPIENT@EMAIL.HERE',
+                                    'name': 'RECIPIENT NAME (OPTIONAL)',
+                                    'type': 'to'
+                                }
+                            ],
+                            'autotext': 'true',
+                            'subject': 'MATS Alert',
+                            'html': 'Hello, a presumptive has just been detected at your OPD. Find below the details:<br/>\n\
+        Name: \n\
+        Phone Number: \n\
+        Respondent: \n\
+        Growth Details: '
+                        }
+                    }
+                }).done(function (response) {
+                    console.log(response); // if you're into that sorta thing
+                });
+            }
+            
+            if (localStorage.login != "true") {
+                window.location.href = "index.html";
+            }
+
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+            if (localStorage.login == "true" && filename == 'login.html') {
+                window.location.href = "index.html";
+            }
+            else if (localStorage.login == "false" && filename != 'login.html') {
+                window.location.href = "login.html";
+            }
+        </script>
+
+        <script type="text/javascript">
+
+            function showDiv(elem) { //cough
+                document.getElementById('more').selectedIndex = 0;
+                document.getElementById('growth').selectedIndex = 0;
+                //document.getElementById('details').value = "";
+
+                if (elem.value == 1) {
+                    document.getElementById('lmore').style.display = "block";
+                    document.getElementById('lgrowth').style.display = "none";
+                    document.getElementById('ldetails').style.display = "none";
+                } else if (elem.value == 2) {
+                    document.getElementById('lmore').style.display = "none";
+                    document.getElementById('lgrowth').style.display = "none";
+                    document.getElementById('ldetails').style.display = "none";
+                    //document.getElementById('yeas').click();
+
+                    var respondent = document.getElementById('respondent').value;
+
+                    if (respondent == '1' || respondent == '2') {
+                        document.getElementById('yeas4').click(); // no tb flag by adults
+                        document.getElementById('status').value = 'no';
+                        document.getElementById('lsupost').style.display = "block";
+                    } else if (respondent == '3') {
+                        document.getElementById('lgrowth').style.display = "block";
+                    }
+                }
+            }
+
+        </script>
+        <script type="text/javascript">
+            function showDiv2(elem) { //more
+                document.getElementById('growth').selectedIndex = 0;
+                document.getElementById('details').value = "";
+
+                if (elem.value == 1) {
+                    //document.getElementById('yeas2').click();
+                    document.getElementById('lgrowth').style.display = "none";
+                    //document.getElementById('ldetails').style.display = "none";
+
+                    var respondent2 = document.getElementById('respondent').value;
+
+                    if (respondent2 == '1' || respondent2 == '2') {
+                        document.getElementById('yeas3').click(); // yes tb flag by adults
+                        document.getElementById('status').value = 'yes';
+                        document.getElementById('lsupost').style.display = "block";
+                    } else if (respondent2 == '3') {
+                        document.getElementById('lgrowth').style.display = "block";
+                    }
+                } else if (elem.value == 2) {
+                    document.getElementById('lgrowth').style.display = "none";
+                    document.getElementById('ldetails').style.display = "none";
+                    //document.getElementById('yeas').click();
+
+                    var respondent = document.getElementById('respondent').value;
+
+                    if (respondent == '1' || respondent == '2') {
+                        document.getElementById('yeas4').click(); // no tb flag by adults
+                        document.getElementById('status').value = 'no';
+                        document.getElementById('lsupost').style.display = "block";
+                    } else if (respondent == '3') {
+                        document.getElementById('lgrowth').style.display = "block";
+                    }
+                }
+            }
+
+        </script>
+        <script type="text/javascript">
+            function showDiv3(elem) { //growth
+                var moree = document.getElementById('more').value;
+                var coughh = document.getElementById('cough').value;
+                document.getElementById('ldetails').style.display = "none";
+                document.getElementById('details').value = "";
+
+                if (elem.value == '1') {
+                    if (coughh == '1') {
+                        if (moree == '1') { // more than 2 weeks
+                            document.getElementById('yeas3').click(); // yes tb
+                            document.getElementById('status').value = 'yes';
+                            document.getElementById('lsupost').style.display = "block";
+                        } else if (moree == '2') { // less than 2 weeks
+                            document.getElementById('yeas4').click(); //no tb
+                            document.getElementById('status').value = 'no';
+                            document.getElementById('lsupost').style.display = "block";
+                        }
+                    } else if (coughh == '2') {
+                        document.getElementById('yeas4').click(); //no tb
+                        document.getElementById('status').value = 'no';
+                        document.getElementById('lsupost').style.display = "block";
+                    }
+                } else if (elem.value == '2') {
+                    if (coughh == '2') {
+                        document.getElementById('yeas3').click(); //yes tb
+                        document.getElementById('status').value = 'yes';
+                        document.getElementById('ldetails').style.display = "block";
+                        document.getElementById('lsupost').style.display = "block";
+                    } else {
+                        document.getElementById('yeas3').click(); // yes tb
+                        document.getElementById('status').value = 'yes';
+                        document.getElementById('ldetails').style.display = "block";
+                        document.getElementById('lsupost').style.display = "block";
+                    }
+                }
+            }
+
+        </script>
+        <script type="text/javascript">
+            function showDiv0() { //respondent
+                document.getElementById('cough').selectedIndex = 0;
+                //document.getElementById('lmore').style.display = "none";
+                document.getElementById('lmore').style.display = "none";
+                document.getElementById('lgrowth').style.display = "none";
+                document.getElementById('ldetails').style.display = "none";
+            }
+
+        </script>
+
+    </head>
+    <body style="background: #000;">
+        <!---------------------->
+        <div class="app-video">
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas" href="#small-dialog5"></a>
+            </div>
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas2" href="#small-dialog52"></a>
+            </div>
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas3" href="#small-dialog53"></a>
+            </div>
+            <div class="img-play">
+                <a class="play-icon popup-with-zoom-anim" id="yeas4" href="#small-dialog54"></a>
+            </div>
+            <div id="small-dialog5" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>Hello Welcome Here</div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            </div>
+            <div id="small-dialog53" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>TB Suspect For Further Evaluation</div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            </div>
+            <div id="small-dialog54" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>Not A TB Suspect </div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            </div>
+            <div id="small-dialog52" class="mfp-hide">
+                <div style="frameborder:30" webkitallowfullscreen mozallowfullscreen allowfullscreen>Hello Welcome Here 2</div>
+                <!-- <iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+
+                });
+
+            </script>
+            <link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all">
+            <script type="text/javascript" src="js/jq.js"></script>
+            <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+        </div>
+        <!-------------------------------->
+        <div class="bar bar-header">
+            <a href="javascript: history.go(-1)" class="button button-clear">&lt; Back</a>
+            <h1 class="title">Start Survey</h1>
+        </div>
+
+
+        <div id="wrapper">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="adjust-nav">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="logo.jpg" width="55"/>
+
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <nav class="navbar-default navbar-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="main-menu">
+                        <li >
+                            <a href="dash.html" ><i class="fa fa-desktop "></i>Dashboard</a>
+                        </li>
+                        <li class="active-link">
+                            <a href="survey.html"><i class="fa fa-pencil-square-o "></i>Start Screening</a>
+                        </li>
+                        <li>
+                            <a href="pending.html"><i class="fa fa-clock-o "></i>Pending Screens</a>
+                        </li>
+                        <li>
+                            <a href="change-password.html"><i class="fa fa-lock  "></i>Change Password</a>
+                        </li>
+                        <li id="logout">
+                            <a href="#logout"><i class="fa fa-sign-out"></i>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>  
+
+            <div id="page-wrapper" class="padding" style="margin-top:80px; background-color: black">
+                <div id="page-innerr"  style="background-color: black">
+                    <div style="background-color: #214761; padding: 2px; margin-bottom: 20px;"><h5 style="color: white; text-align: center">Screening Analysis</h5></div> 
+                    <input type="hidden" name="status" id="status" value="">
+                    <label class="item-input">
+                        <span class="input-label">First Name</span>
+                        <input type="text" placeholder="Input First Name Only" name="name" id="name">
+                    </label>
+                    <label class="item-input">
+                        <span class="input-label">Mobile Number</span>
+                        <input type="text" placeholder="Input Mobile Number" name="mobile" id="mobile">
+                    </label>
+                    <label class="item-input">
+                        <span class="input-label">Respondent</span>
+                        <select name ="respondent" id="respondent" onchange="showDiv0()" class="styled-select blue semi-square">
+                            <option value="0" >Choose Respondent</option>
+                            <option value="1" >Self</option>
+                            <option value="2" >Adult Dependent</option>
+                            <option value="3" >Child</option>
+                        </select>
+                    </label>
+                    <label id="lcough" class="item-input">
+                        <span class="input-label">Have Cough?</span>
+                        <select name="cough" id="cough" onchange="showDiv(this)" class="styled-select blue semi-square">
+                            <option value="0" >Choose Option</option>
+                            <option value="1" >Yes</option>
+                            <option value="2" >No</option>
+                        </select>
+                    </label>
+                    <label id="lmore" class="item-input" style="display: none" >
+                        <span style="color: white" >Cough More Than 2 Weeks?? </span>
+                        <select name ="more" id="more" onchange="showDiv2(this)" class="styled-select blue semi-square" >
+                            <option value="0" >Choose Option</option>
+                            <option value="1" >Yes</option>
+                            <option value="2" >No</option>
+                        </select> 
+                    </label>
+                    <label class="item-input" id="lgrowth" style="display: none" >
+                        <span style="color: white" >Is Child Growing Adequately? </span>
+                        <select name ="growth" id="growth" onchange="showDiv3(this)" class="styled-select blue semi-square">
+                            <option value="0" >Choose Option</option>
+                            <option value="1" >Yes</option>
+                            <option value="2" >No</option> 
+                        </select>
+                    </label>
+                    <label class="item-input" id="ldetails" style="display: none">
+                        <span style="color: white" >Enter Child's Growth Details</span>
+                        <textarea id="details" name="details" class="" placeholder=" Child's Growth Details Here..."></textarea>
+                    </label>
+                    <label id="lsupost" class="item-input" style="display: none">
+                        <span class="input-label"></span>
+                        <button class="button button-block button-positive" id="supost">End Survey</button>
+                    </label>
+                </div>
+
+            </div></div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/auth.js"></script>
+        <!-- CUSTOM SCRIPTS -->
+        <script src="js/custom.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+
+
+        <title>MATS</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Clean Recipe App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <meta charset utf="8">
+        <!--font-awsome-css-->
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+        <!--bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!--custom css-->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/percircle.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+
+
+        <!--component-css-->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/lga.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--script-->
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/bigSlide.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu-link').bigSlide();
+            });
+        </script>
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+                });
+            });
+        </script>
+
+        <!--script-->
+        <!-- swipe box js -->
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+        <!-- //swipe box js -->
+
+
+        <!--script-->
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+            if (localStorage.login == "true" && filename == 'index.html') {
+                window.location.href = "dash.html";
+            }
+            else if (localStorage.login == "false" && filename != 'index.html') {
+                window.location.href = "index.html";
+            }
+
+            document.addEventListener("offline", offNotifyy, false);
+            document.addEventListener("online", onSendy, false);
+            function offNotifyy() {
+                document.getElementById("small-dialog5").innerHTML = "Please Connect Internet To View";
+            }
+            function onSendy() {
+                document.getElementById("small-dialog5").innerHTML = '<iframe src="https://player.vimeo.com/video/57866624" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            }
+        </script>
+
+    </head>
+
+    <body class="body-back" style="background-color: #194966;">
+
+
+        <div class="masthead pdng-stn1" style="overflow: auto;position: relative;padding-bottom: 150px;">
+            <div id="menu" class="panel" role="navigation">
+                <div class="wrap-content">
+                    <div class="profile-menu text-center">
+                        <img class="img-circle border-effect" src="images/pic3.png" alt=" ">
+                        <h3>Welcome To MATS</h3>
+                        <p><strong>First Step In Improving TB Care</strong></p>
+                        <div class="pro-menu">
+                            <div class="logo">
+                                <li><a class=" link link--yaku" href="index.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+                                <li><a class=" link link--yaku" href="about.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+                                <li><a class=" link link--yaku" href="signup.html"><span>N</span><span>e</span><span>w&nbsp;</span><span>S</span><span>p</span><span>o</span><span>k</span><span>e</span></a></li>
+                                <li><a class=" link link--yaku" href="facility.html"><span>N</span><span>e</span><span>w</span><span>&nbsp;</span><span>H</span><span>u</span><span>b</span></a></li>
+                                <li><a class=" link link--yaku" href="forget-password.html"><span>F</span><span>o</span><span>r</span><span>g</span><span>o</span><span>t</span><span>&nbsp;</span><span>P</span><span>a</span><span>s</span><span>s</span><span>w</span><span>o</span><span>r</span><span>d</span></a></li>
+                                <li><a class=" link link--yaku" href="login.html"><span>L</span><span>o</span><span>g</span><span></span><span>i</span><span>n</span></a></li>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-box wrap push" id="home">
+                <div id="main">
+                    <div class="menu-notify">
+                        <div class="profile-left">
+                            <a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+                        </div>
+                        <div class="Profile-mid">
+                            <h5 class="pro-link">MATS SignUp</h5>
+                        </div>
+                        <div class="Profile-right">
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div> 
+
+
+
+                    <div class="padding" style="margin-top:55px;">
+                        <label class="item-input">
+                            <span class="input-label">Name</span>
+                            <input type="text" placeholder="TheBuston Store" id="fullname">
+                        </label>
+                        
+                        </label>
+                        <label class="item-input">
+                            <span class="input-label">Phone Number</span>
+                            <input type="text" placeholder="080xxxxxxxx" id="phone" maxlength="11">
+                        </label>
+                        <label class="item-input">
+                            <span class="input-label">Email</span>
+                            <input type="email" placeholder="email@domain.com" id="email">
+                        </label>
+                        <label class="item-input">
+                            <span class="input-label">State</span>
+                            <select name="state" id="state" class="form-control" style="background-color: #1B9E97;color: white;">
+                                <option value="" selected="selected" >- Select -</option>
+                               <option value='Abia'>Abia</option>
+                                <option value='Adamawa'>Adamawa</option>
+                                <option value='Akwa Ibom'>Akwa Ibom</option>
+                                <option value='Anambra'>Anambra</option>
+                                <option value='Bauchi'>Bauchi</option>
+                                <option value='Bayelsa'>Bayelsa</option>
+                                <option value='Benue'>Benue</option>
+                                <option value='Borno'>Borno</option>
+                                <option value='Cross River'>Cross River</option>
+                                <option value='Delta'>Delta</option>
+                                <option value='Ebonyi'>Ebonyi</option>
+                                <option value='Edo'>Edo</option>
+                                <option value='Ekiti'>Ekiti</option>
+                                <option value='Enugu'>Enugu</option>
+                                <option value='FCT'>FCT</option>
+                                <option value='Gombe'>Gombe</option>
+                                <option value='Imo'>Imo</option>
+                                <option value='Jigawa'>Jigawa</option>
+                                <option value='Kaduna'>Kaduna</option>
+                                <option value='Kano'>Kano</option>
+                                <option value='Katsina'>Katsina</option>
+                                <option value='Kebbi'>Kebbi</option>
+                                <option value='Kogi'>Kogi</option>
+                                <option value='Kwara'>Kwara</option>
+                                <option value='Lagos'>Lagos</option>
+                                <option value='Nasarawa'>Nasarawa</option>
+                                <option value='Niger'>Niger</option>
+                                <option value='Ogun'>Ogun</option>
+                                <option value='Ondo'>Ondo</option>
+                                <option value='Osun'>Osun</option>
+                                <option value='Oyo'>Oyo</option>
+                                <option value='Plateau'>Plateau</option>
+                                <option value='Rivers'>Rivers</option>
+                                <option value='Sokoto'>Sokoto</option>
+                                <option value='Taraba'>Taraba</option>
+                                <option value='Yobe'>Yobe</option>
+                                <option value='Zamfara'>Zamafara</option>
+                            </select>
+                        </label>
+
+                        <label class="item-input">
+                            <span class="input-label">LGA</span>
+                            <select name="lga" id="lga" class="form-control" onchange="facs()" style="background-color: #1B9E97;color: white;">
+                            </select>
+                        </label>
+
+                        <label class="item-input">
+                            <span class="input-label">Hub Facility</span>
+                            <span id="faccc">
+                                <select name="facility" id="facility" class="form-control" style="background-color: #1B9E97;color: white;">
+                                </select>
+                            </span>
+                        </label>
+                        
+                        <label class="item-input">
+                            <span class="input-label">Facility Type</span>
+                            <select name="type" id="type" class="form-control" style="background-color: #1B9E97;color: white;">
+                                <option value="" selected="selected" >- Select -</option>
+                                <option value='outreach'>Outreach</option>
+                                <option value='hp'>Health Post</option>
+                                <option value='ppmv'>PPMV</option>
+                                <option value='cp'>Community Pharmacy</option>
+                                <option value='phc'>Primary Healthcare Centre</option>
+                                <option value='tba'>Traditional Birth Attendant</option>
+                                <option value='th'>Traditional Healers</option>
+                                <option value='ph'>Private Hospital</option>
+                                <option value='fbo'>Faith Based Organization</option>
+                                <option value='pp'>Private For Profit</option>
+                                <option value='co'>Cough Officer</option>
+                                <option value='ctw'>Community TB Workers</option>
+                                <option value='others'>Others</option>
+                            </select>
+                        </label>
+
+                        <label class="item-input">
+                            <span class="input-label">Password</span>
+                            <input type="password" placeholder="password" id="password">
+                        </label>
+                        <label class="item-input">
+                            <span class="input-label">Confirm Password</span>
+                            <input type="password" placeholder="confirm password" id="cpassword">
+                        </label>
+                        <label class="item-input">
+                            <button class="button button-block button-positive" id="signup">Create Account</button>
+                        </label>
+
+
+                    </div>
+
+                </div>
+
+                <!--<footer class="row" id="footer" >
+                <div class="container">
+                        <section class="customer-logos slider" style="background-color: #EEE">
+                            <div class="slide" style="width: 100%; padding-top: 10%"><img style="width: 100%" src="images/image11.png"></div>
+                        </section>
+                </div>
+        </footer>-->
+            </div>
+
+
+
+
+        </div>
+        <div class="banner-bottom" style="position: fixed; bottom: 0;  width: 100%; /*height: 50px;*/ border-top: 2px solid #008CBA;border-bottom: 2px solid #008CBA; background-color: #ccc">
+            <div class="row2">
+                <div class="column2">
+                 <img src="images/image3.png" alt="NTBLCP" style="width:100%">
+                </div>
+               <div class="column2">
+                  <!--   <img src="images/image3.png" alt="Mountains" style="width:100%">-->
+                </div>
+                <div class="column2">
+                   <img src="images/image33.png" alt="GF" style="width:100%">
+                </div>
+            </div>
+
+        </div>
+
+        <!--start-copyright
+        <div class="copy-right">
+            <p>Copyright &copy; 2017  All rights  Reserved</p>
+        </div>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="js/jq.js"></script>-->
+        <script type="text/javascript" src="js/auth.js"></script>
+        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('.customer-logos').slick({
+                                        slidesToShow: 6,
+                                        slidesToScroll: 1,
+                                        autoplay: true,
+                                        autoplaySpeed: 1000,
+                                        arrows: false,
+                                        dots: false,
+                                        pauseOnHover: false,
+                                        responsive: [{
+                                                breakpoint: 768,
+                                                settings: {
+                                                    slidesToShow: 4
+                                                }
+                                            }, {
+                                                breakpoint: 520,
+                                                settings: {
+                                                    slidesToShow: 3
+                                                }
+                                            }]
+                                    });
+                                });
+        </script>
+        <script>
+            if ($(window).height() > $("body").height()) {
+                $("footer").css("position", "fixed");
+            } else {
+                $("footer").css("position", "static");
+            }
+
+            /*$.ajax({
+                url: "https://geoip-db.com/jsonp",
+                jsonpCallback: "callback",
+                dataType: "jsonp",
+                success: function (location) {
+                    var x = document.getElementById("state");
+                    var option = document.createElement("option");
+                    option.text = location.state;
+                    x.add(option);
+                }
+            });*/
+
+            function facs() {
+                var url = "http://197.159.69.199:8000/pharm/auth_new.php?callback=?";
+                var state = $("#state").val();
+                var lga = $("#lga").val();
+                var dataString = "lga=" + lga + "&state=" + state + "&lgaload=";
+
+                if ($.trim(state) == '') {
+                    alert("Please Select State");
+                    return false;
+                } else if ($.trim(lga) == '') {
+                    alert("Please Select LGA");
+                    return false;
+                }
+
+                if ($.trim(state).length > 0 & $.trim(lga).length > 0)
+                {
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: dataString,
+                        crossDomain: true,
+                        cache: false,
+                        beforeSend: function () {
+                            $("#faccc").html('<button class="button button-block button-positive">Loading Available Facilities...</button>');
+                        },
+                        success: function (datay) {
+                            //alert(datay);
+                            var dp = datay;
+                            //document.getElementById("faccc").innerHTML = dp;
+                            $("#faccc").html(dp);
+                        }
+                    });
+                }
+                return false;
+            }
+        </script>
+    </body>
+
+</html>
