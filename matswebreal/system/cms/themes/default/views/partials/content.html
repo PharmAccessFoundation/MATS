@@ -1,0 +1,45 @@
+{{ if page:is_home == true }}
+	<!-- Begin full width content -->
+        <div class="divider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+                            <a style="color: white; text-decoration: none" href="{{url:site}}how-to-screen">
+                                    <div class="divider-wrapper divider-one">
+					<i class="fa fa-plus-square"></i>
+					<h2>How to Screen</h2>
+                                        <p>Screen your clients for tuberculosis in <strong>Three Quick Steps</strong>.</p>
+				</div>
+                                    </a>
+			</div>
+                    
+			<div class="col-md-4 col-sm-6">
+                             <a style="color: white; text-decoration: none" href="https://drive.google.com/file/d/1AB1XvksCUxYGm3g6rb-4vLZUg0lp6X7e/view?usp=sharing}">
+				<div class="divider-wrapper divider-two">
+					<i class="fa fa-book"></i>
+					<h2>User Guide</h2>
+                                        <p>Easy to Use Guide for in Rapid Case <strong>Detection of Tuberculosis!</strong></p>
+				</div>
+                             </a>
+			</div>
+                    
+			<div class="col-md-4 col-sm-12">
+                             <a style="color: white; text-decoration: none" href="{{url:site}}technical-support">
+				<div class="divider-wrapper divider-three">
+					<i class="fa fa-life-ring"></i>
+					<h2>Tech. Support</h2>
+                                        <p>Want to know more? Click here for <strong>For More Information</strong></p>
+				</div>
+                             </a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+{{ else }}
+	<!-- Begin 2 column content -->
+	{{ session:messages success="success-box" notice="notice-box" error="error-box" }}
+	<section class="post clearfix">
+		{{ template:body }}
+	</section>
+{{ endif }}

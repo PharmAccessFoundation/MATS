@@ -1,0 +1,47 @@
+<!-- Begin header -->
+<header>
+	<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">{{ theme:image file="logo.png" alt="logo" class="img-responsive" }}</a>
+		</div>
+		<div class="collapse navbar-collapse" >
+			<ul class="nav navbar-nav navbar-right" style="background: #2E629C">
+				<li><a href="" {{if page:is_home}} class="active" {{endif}}>HOME</a></li>
+				<li><a href="{{url:site}}about"  {{if page:slug == 'about'}} class="active" {{endif}}>ABOUT US</a></li>
+				<li><a href="{{url:site}}blog"  {{if page:slug == 'blog'}}  class="active" {{endif}}>NEWS UPDATES</a></li>
+				<li><a href="{{url:site}}contact"  {{if page:slug == 'contact'}}  class="active" {{endif}}>CONTACT</a></li>
+                                <li><a href="{{url:site}}faq"  {{if page:slug == 'faq'}}  class="active" {{endif}}>FAQ</a></li>
+                                <li><a target="_blank" href="{{url:site}}admin">LOGIN</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+</header>
+
+{{ if page:is_home == true}}
+<div id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-3"></div>
+			<div class="col-md-7 col-sm-9">
+				<h3>Welcome To MATS</h3>
+				<h2>First Step To Improving TB Care...</h2>
+			</div>
+		</div>
+	</div>
+</div>
+{{else}}
+<div id="portfolio-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12"></div>
+		</div>
+	</div>
+</div>
+{{endif}}

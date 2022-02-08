@@ -1,0 +1,18 @@
+section.item form
+ul{margin:5px
+0 5px 0 !important}.form_inputs .input.small-side{margin-right:10px;position:absolute;top:0;right:0}.form_inputs .input.small-side
+select{width:auto}.input.datetime_input
+#datepicker{width:35%}li.editor{padding-bottom:0 !important;margin-bottom:0 !important}.edit-content{margin-top:20px}form.crud li.date-meta
+div.selector{float:left;width:30px}form.crud li.date-meta div
+input#datepicker{width:8em}form.crud li.date-meta
+div.selector{width:5em}form.crud li.date-meta div.selector
+span{width:1em}form.crud li.date-meta label.time-meta{min-width:4em;width:4em}.one_quarter
+select{min-width:30% !important;width:40% !important}
+div.tagsinput{border:1px
+solid #CCC;background:#FFF;padding:5px;width:300px;height:100px;overflow-y:auto}div.tagsinput
+span.tag{border:1px
+solid #AAA;-moz-border-radius:2px;-webkit-border-radius:2px;display:block;float:left;padding:5px;text-decoration:none;background:#EEE;color:#808080;margin-right:5px;margin-bottom:5px;font-family:helvetica;font-size:13px}div.tagsinput span.tag
+a{font-weight:bold;color:#808080;text-decoration:none;font-size:11px}div.tagsinput
+input{width:80px;margin:0px;font-family:helvetica;font-size:13px;border:1px
+solid transparent;padding:5px;background:transparent;color:#000;outline:0px;margin-right:5px;margin-bottom:5px}div.tagsinput
+div{display:block;float:left}.tags_clear{clear:both;width:100%;height:0px}.not_valid{background:#FBD8DB !important;color:#90111A !important}

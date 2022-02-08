@@ -1,0 +1,2 @@
+[08-Sep-2017 06:28:08 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'pharmaccessmats'@'host3.smartwebng.com' (using password: YES) in /home/showmeg/public_html/pharm/auth.php on line 9
+[08-Sep-2017 06:38:57 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'pharmacc_dbuser'@'host3.smartwebng.com' (using password: YES) in /home/showmeg/public_html/pharm/auth.php on line 9

@@ -1,0 +1,128 @@
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5 col-sm-4">
+                {{ theme:image file="logo.png"  class="img-responsive" alt="Logo" }}
+                <p>We believe that mobile technology has the potential to revolutionize the healthcare sector and reach people at
+                    <a rel="nofollow" href="#" target="_parent">our organization</a> .
+                    You can contact us through:</p>
+                <p><i class="fa fa-phone"></i> +234 802 595 4513, +234 805 301 2332</p>
+                <p><i class="fa fa-envelope-o"></i> matssupport@ihvnigeria.org</p>
+                <p><i class="fa fa-globe"></i> www.matslagos.com.ng</p>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+                <h3>Useful Links</h3>
+                <p><a href="{{url:site}}about">About Us</a></p>
+                <p><a href="{{url:site}}about-mats">About MATS </a></p>
+                <p><a href="{{url:site}}partners">Our Partners</a></p>
+                <p><a href="{{url:site}}contact">Support</a></p>
+                <p><a href="{{url:site}}admin/login">Admin Login</a></p>
+            </div>
+
+            <div class="col-md-4 col-sm-4 newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe To Our Newsletter For News Updates.</p>
+                <div class="input-group">
+                    <form action="#" method="post">
+                        <input name="email" type="email" placeholder="Enter your email" class="form-control" autorequired>
+                        <button type="submit" name="submit" class="btn email">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" >
+            <div class="container">
+                <h3>Our Partners</h3>
+                <section class="customer-logos slider" style="background-color: #A1BDC1">
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <!--<div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image9.png"></div>
+                    <div class="slide"><img src="images/image1.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image3.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image9.png"></div>
+                    <div class="slide"><img src="images/image1.png"></div>
+                    <div class="slide"><img src="images/image2.png"></div>
+                    <div class="slide"><img src="images/image3.png"></div>
+                    <div class="slide"><img src="images/image4.png"></div>
+                    <div class="slide"><img src="images/image9.png"></div>-->
+                </section>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- copyright section -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <p style="color: #fff;">Copyright © {{ helper:date format="Y" }} NTBLCP. {{ helper:lang line="all_right_reserved" }}</p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <ul class="social-icons">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-skype"></a></li>
+                    <li><a href="#" class="fa fa-envelope-o"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- End footer -->
+<!-- Begin scripts -->
+{{ theme:js file="bootstrap.min.js" }}
+{{ theme:js file="nivo-lightbox.min.js" }}
+{{ theme:js file="custom.js" }}
+{{ theme:js file="slick.js" }}
+{{ theme:js file="custom.js" }}
+<!-- End scripts -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+        });
+    });
+
+   
+</script>
